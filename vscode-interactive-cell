@@ -1,0 +1,11 @@
+Place in keybindings.json file (ctr+shift+p)
+
+// Place your key bindings in this file to override the defaults
+[
+    {
+        "key": "alt+3",
+        "command": "editor.action.insertSnippet",
+        "args": { "snippet": "# %%" },
+        "when": "editorTextFocus && editorLangId == 'python'"
+    },
+]
