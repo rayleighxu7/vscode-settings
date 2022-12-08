@@ -1,0 +1,12 @@
+set -a
+source ~/decisioning_engine/secrets/.env
+set +a
+
+export PATH="$HOME/.local/share/pypoetry/venv/bin/poetry:$PATH"
+
+
+
+alias switch="python workflow_automation/catalog_switch.py --switch-on"
+alias bro="git"
+alias yeet="git push"
+alias yoink="git pull"
