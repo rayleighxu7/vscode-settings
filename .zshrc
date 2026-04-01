@@ -19,7 +19,7 @@ autoload -Uz vcs_info
 precmd() { vcs_info }
 
 # Show git branch name in yellow
-zstyle ':vcs_info:git:*' formats ' %F{226}(%b)%f'
+zstyle ':vcs_info:git:*' formats ' - %F{226}(%b)%f'
 
 setopt PROMPT_SUBST
-PROMPT='%F{34}${VIRTUAL_ENV:+(${VIRTUAL_ENV:t}) }%f%F{15}%~%f${vcs_info_msg_0_} $ '
+PROMPT='%F{34}${VIRTUAL_ENV:+(${VIRTUAL_ENV_PROMPT:-${VIRTUAL_ENV:t}})  }%f%F{15}%~%f${vcs_info_msg_0_} $ '
