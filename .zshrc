@@ -14,9 +14,12 @@ cfs() {
     /Volumes/caruso-data
 }
 
-# Prompt with path and git branch
+# Prompt: green virtualenv, white path, yellow git branch
 autoload -Uz vcs_info
 precmd() { vcs_info }
-zstyle ':vcs_info:git:*' formats ' (%b)'
+
+# Show git branch name in yellow
+zstyle ':vcs_info:git:*' formats ' %F{226}(%b)%f'
+
 setopt PROMPT_SUBST
-PROMPT='%F{33}%~${vcs_info_msg_0_}%f $ '
+PROMPT='%F{34}${VIRTUAL_ENV:+(${VIRTUAL_ENV:t}) }%f%F{15}%~%f${vcs_info_msg_0_} $ '
