@@ -1,5 +1,6 @@
 # Aliases
-alias base='cd; cd Projects/; ls'
+alias base='cd; cd Projects/; ls | cat'
+# alias base='cd; cd Projects/; ls'
 alias python='python3'
 alias pip='pip3'
 alias imptools_update='pip install --force-reinstall --no-cache-dir git+https://github.com/JasperLabs/imptools'
