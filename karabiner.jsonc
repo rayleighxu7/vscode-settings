@@ -1,6 +1,7 @@
 // copy and paste the below into the ~/.config/karabiner/karabiner.json file
-
+// DO NOT COPY THE WHOLE FILE, JUST THE CONTENT
 {
+    "global": { "check_for_updates_on_startup": false },
     "profiles": [
         {
             "complex_modifications": {
@@ -9,7 +10,6 @@
                         "description": "Swap Cmd+Tab and Ctrl+Tab",
                         "manipulators": [
                             {
-                                "type": "basic",
                                 "from": {
                                     "key_code": "tab",
                                     "modifiers": {
@@ -22,10 +22,10 @@
                                         "key_code": "tab",
                                         "modifiers": ["control"]
                                     }
-                                ]
+                                ],
+                                "type": "basic"
                             },
                             {
-                                "type": "basic",
                                 "from": {
                                     "key_code": "tab",
                                     "modifiers": {
@@ -38,7 +38,8 @@
                                         "key_code": "tab",
                                         "modifiers": ["command"]
                                     }
-                                ]
+                                ],
+                                "type": "basic"
                             }
                         ]
                     }
@@ -46,6 +47,16 @@
             },
             "name": "Default profile",
             "selected": true,
+            "simple_modifications": [
+                {
+                    "from": { "key_code": "left_command" },
+                    "to": [{ "key_code": "left_control" }]
+                },
+                {
+                    "from": { "key_code": "left_control" },
+                    "to": [{ "key_code": "left_command" }]
+                }
+            ],
             "virtual_hid_keyboard": { "keyboard_type_v2": "ansi" }
         }
     ]
