@@ -1,7 +1,11 @@
 // copy and paste the below into the ~/.config/karabiner/karabiner.json file
 // DO NOT COPY THE WHOLE FILE, JUST THE CONTENT
+
 {
-    "global": { "check_for_updates_on_startup": false },
+    "global": {
+        "check_for_updates_on_startup": false,
+        "show_in_menu_bar": false
+    },
     "profiles": [
         {
             "complex_modifications": {
@@ -55,6 +59,14 @@
                 {
                     "from": { "key_code": "left_control" },
                     "to": [{ "key_code": "left_command" }]
+                },
+                {
+                    "from": { "key_code": "right_control" },
+                    "to": [{ "key_code": "right_command" }]
+                },
+                {
+                    "from": { "key_codes": "right_command" },
+                    "to": [{ "key_code": "right_control" }]
                 }
             ],
             "virtual_hid_keyboard": { "keyboard_type_v2": "ansi" }
