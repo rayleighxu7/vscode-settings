@@ -1,2 +1,0 @@
-shottr
-rectangle

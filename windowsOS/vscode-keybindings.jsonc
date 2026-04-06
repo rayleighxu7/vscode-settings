@@ -1,0 +1,30 @@
+// Place your key bindings in this file to override the defaults
+[
+    {
+        "key": "alt+3",
+        "command": "editor.action.insertSnippet",
+        "args": { "snippet": "# %%"},
+        "when": "editorTextFocus && editorLangId == 'python'"
+    },
+    {
+        "key": "alt+3",
+        "command": "notebook.cell.split",
+        "when": "notebookEditorFocused && editorLangId == 'python'"
+    },
+    { 
+        "key": "ctrl+-",
+        "command": "notebook.cell.joinAbove",
+        "when": "notebookEditorFocused && editorLangId == 'python'"
+    },
+    { 
+        "key": "ctrl+=",
+        "command": "notebook.cell.joinAbove",
+        "when": "notebookEditorFocused && editorLangId == 'python'"
+    },
+    {
+        "key": "alt+delete",
+        "command": "-notebook.cell.clearOutputs",
+        "when": "notebookCellEditable && notebookCellHasOutputs && notebookEditable && notebookEditorFocused && !inputFocus"
+    }
+]
+
