@@ -1,0 +1,20 @@
+{
+    "files.autoSave": "afterDelay",
+    "cursor.composer.usageSummaryDisplay": "always",
+    "workbench.iconTheme": "vscode-icons",
+    "explorer.confirmDelete": false,
+    "workbench.colorTheme": "Default Dark Modern",
+    "notebook.cellToolbarVisibility": "hover",
+    "dataWrangler.debug": true,
+    "dataWrangler.defaultViewingFilterOptions": "advanced",
+    "dataWrangler.outputRenderer.enabled": true,
+    "dataWrangler.outputRenderer.columnInsights.displayByDefault": true,
+    "jupyter.askForKernelRestart": false,
+    "explorer.compactFolders": false,
+    "notebook.find.filters": {
+        "markupSource": false,
+        "markupPreview": false,
+        "codeSource": true,
+        "codeOutput": false
+    }
+}
