@@ -20,6 +20,14 @@
         "when": "editorTextFocus && inputFocus && notebookEditorFocused && !notebookOutputFocused"
     },
     {
+        "key": "ctrl+3",
+        "command": "editor.action.insertSnippet",
+        "args": {
+            "snippet": "# %%"
+        },
+        "when": "editorTextFocus && editorLangId == 'python' && !notebookEditorFocused"
+    },
+    {
         "key": "ctrl+shift+-",
         "command": "-notebook.cell.split",
         "when": "editorTextFocus && inputFocus && notebookEditorFocused && !notebookOutputFocused"
@@ -68,5 +76,15 @@
         "key": "alt+up",
         "command": "-notebook.cell.moveUp",
         "when": "notebookEditorFocused && !inputFocus"
+    },
+    {
+        "key": "cmd+enter",
+        "command": "jupyter.runcurrentcell",
+        "when": "editorTextFocus && isWorkspaceTrusted && jupyter.hascodecells && !editorHasSelection && !isCompositeNotebook && !notebookEditorFocused"
+    },
+    {
+        "key": "ctrl+enter",
+        "command": "-jupyter.runcurrentcell",
+        "when": "editorTextFocus && isWorkspaceTrusted && jupyter.hascodecells && !editorHasSelection && !isCompositeNotebook && !notebookEditorFocused"
     }
 ]
